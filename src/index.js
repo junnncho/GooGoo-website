@@ -1,31 +1,17 @@
-export * from './alert';
-export * from './breadcrumbs';
-export * from './button';
-export * from './editable-text';
-export * from './editable-select';
-export * from './input';
-export * from './loading';
-export * from './messages-alert';
-export * from './messages-alert-container';
-export * from './modal';
-export * from './notification';
-export * from './notification-alert';
-export * from './notifications-alert';
-export * from './notifications';
-export * from './preloader';
-export * from './page';
-export * from './pagination';
-export * from './panel';
-export * from './progress-bar';
-export * from './select';
-export * from './switch';
-export * from './tab';
-export * from './table';
-export * from './table-body';
-export * from './table-head';
-export * from './table-row';
-export * from './tabs';
-export * from './textarea';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-// helpers
-export * from './lib/event-bus';
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
