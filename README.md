@@ -1,15 +1,6 @@
-# Entrepreneurship Cell - VIT
+# NFT Website(Hobby2E)
 
-[![Website](https://img.shields.io/badge/Website-Live-Blueviolet?style=for-the-badge&logo=appveyor&color=blueviolet)](https://ecellvit.com)
 
-The official portal of E-cell VIT.
+The official nft website
 
-## Screenshots
-![image](https://user-images.githubusercontent.com/24913006/102004964-5c8c5e80-3d3b-11eb-95a2-d1709413d240.png)
 
-## Contributers
-+ <a href="https://github.com/gvinayakgupta">Vinayak Gupta</a>
-+ <a href="https://github.com/vinamrak">Vinamra Khoria</a>
-
-![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
