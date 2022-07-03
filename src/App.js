@@ -1,9 +1,8 @@
-import React from 'react';
-import Main from './pages/Main';
-// import Recruitments from './pages/Recruitments';
+import React from "react";
+import Main from "./pages/Main";
+// import Recruitments from "./pages/Recruitments";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ErrorPage from './pages/ErrorPage';
-
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (

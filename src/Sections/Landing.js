@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Nav from "../Components/Nav";
 import Social from "../Components/Social";
+import Image from "../Components/Image";
 import { Link } from "react-scroll";
 
 function Landing() {
@@ -13,7 +14,7 @@ function Landing() {
     setHead(txt);
   });
   window.addEventListener("load", () => {
-    var txt = "E-Cell";
+    var txt = "Hobbies";
     if (window.innerWidth > 400) {
       txt = "Hobby To Earn";
     }
@@ -30,11 +31,7 @@ function Landing() {
         <div className="col-12">
           <span className="head">{head}</span>
           <span className="vit">NFT Project</span>
-          <img
-            src={require("../img/sample.png")}
-            alt=""
-            className="about-img"
-          />
+          <Image img="./assets/sample.png" name="Skate" />
           {/*<span className="iia">IDEATE. INNOVATE. ACTUATE.</span>
           <span className="down">
             <a

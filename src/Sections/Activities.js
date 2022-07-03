@@ -1,14 +1,25 @@
-import React from 'react';
-import DarkBg from '../Components/DarkBg';
-import Events from '../Components/Events';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Events from "../Components/Events";
 
 function Activities() {
-    return (
-        <span id="activities">
-            <DarkBg head="Activities" subhead="Our Events" />
-            <Events />
-        </span>
-    );
+  useEffect(() => {
+    AOS.init();
+  });
+  return (
+    <span id="activities">
+      <div className="bg-activities">
+        <h2 className="title" data-aos="fade-up" data-aos-offset="-20">
+          Roadmap
+        </h2>
+        <p className="subhead" data-aos="fade-up" data-aos-offset="-20">
+          우리의 목표
+        </p>
+      </div>
+      <Events />
+    </span>
+  );
 }
 
 export default Activities;

@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@font-face {
+  font-family: "Wake";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_WAKEUP.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MACHO";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_MACHO.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
+
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +31,7 @@ body {
   width: 100%;
   padding: 0;
   overflow: hidden;
+  font-family: "Wake";
 }
 
 code {
@@ -60,10 +77,15 @@ html {
   }
 }
 
+.ticker {
+  background-color: #fe7651;
+  border: none;
+}
+
 .team {
   display: flex;
   justify-content: center;
-  background-color: #181327;
+  background-color: #af24ad;
   flex-wrap: wrap;
 }
 
@@ -191,7 +213,7 @@ html {
 }
 
 .background {
-  background-color: #fe410f;
+  background-color: orangered;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -221,6 +243,7 @@ html {
 
 .col-12 {
   width: 99.99%;
+  position: relative;
 }
 
 .iia,
@@ -230,6 +253,17 @@ html {
   text-transform: uppercase;
 }
 
+.Skate {
+  top: 10vh;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 100vw;
+  z-index: 0;
+  border-radius: 20%;
+}
+
 .iia {
   margin-bottom: 1rem;
   font-size: 3vw;
@@ -237,13 +271,15 @@ html {
 }
 
 .head {
-  font-size: 5vw;
+  font-size: 7vw;
   font-weight: 700;
+  z-index: 1;
   overflow-x: hidden;
 }
 
 .vit {
-  font-size: 4vw;
+  z-index: 1;
+  font-size: 5vw;
   font-weight: 600;
 }
 
@@ -315,7 +351,7 @@ html {
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #ff5e00;
   text-align: center;
   padding: 60px;
 }
@@ -330,7 +366,7 @@ html {
 }
 
 .footer .iia {
-  color: #8143fa;
+  color: #ffffff;
   font-size: 2vw;
   margin: 1.3rem 0;
 }
@@ -389,7 +425,7 @@ html {
 
 .top a,
 .bottom a {
-  background-color: #8143fa;
+  background-color: #00d3e6;
   text-decoration: none;
   color: #ffffff;
   border-radius: 50%;
@@ -435,7 +471,7 @@ html {
 
 .scrolled {
   opacity: 1;
-  background-color: #181327fe;
+  background-color: #fe7651;
 }
 
 .topnav img {
@@ -482,7 +518,7 @@ html {
     outline: none;
   }
   .sidenav {
-    background-color: #0006;
+    background-color: #fe7651;
   }
   .sidenav a {
     display: block;
@@ -1063,7 +1099,7 @@ loading
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #8141fa33;
+  background-color: #ff5500;
   color: #ffffff;
   overflow: hidden;
   width: 100%;
@@ -1077,7 +1113,7 @@ loading
 }
 
 .g_imgs:hover {
-  box-shadow: 0 0 20px #181327;
+  box-shadow: 0 0 20px #974614;
 }
 
 .g_imgs:hover img {
@@ -1180,7 +1216,7 @@ loading
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #8141faee;
+  background-color: #000000ee;
   color: #ffffff;
   overflow: hidden;
   width: 100%;
@@ -1195,7 +1231,7 @@ loading
 
 .events:hover {
   box-shadow: 0 0 20px #1a1327;
-  background-color: #8141fa;
+  background-color: #014241;
   transform: scale(1.1) !important;
 }
 
@@ -1231,11 +1267,50 @@ loading
 }
 
 .bg {
-  padding: 8vh 10vw;
+  padding: 8vh 5vw;
   text-align: center;
-  background-color: #181327;
+  background-color: #fe7651;
+}
+.bg-activities {
+  padding: 8vh 5vw;
+  text-align: center;
+  background-color: #005cbe;
+}
+.move {
+  padding: 2vh 3vw;
+  text-align: center;
+  background-color: #fe7651;
+}
+.split {
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: #fe7651;
+}
+.split-img {
+  padding: 0vh 0vw;
+  display: flex;
+  flex-direction: row;
 }
 
+.col-left {
+  padding: 1vh 3vw;
+  box-sizing: border-box;
+  float: left;
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.col-right {
+  padding: 1vh 3vw;
+  box-sizing: border-box;
+  float: right;
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
 .title {
   font-size: 3vw;
   color: #f5cb5c;
@@ -1272,6 +1347,7 @@ loading
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px 0px;
+  background-color: rgb(0, 193, 135);
 }
 
 .counters {
@@ -1341,7 +1417,7 @@ loading
   overflow: hidden;
   padding: 15px 26px;
   transition: all 0.3s ease-in;
-  background-color: #181327;
+  background-color: #fe7651;
   opacity: 1;
 }
 
@@ -1353,7 +1429,7 @@ loading
 
 .result-body {
   padding-top: 78px;
-  background-color: #181327 !important;
+  background-color: #fe7651 !important;
   height: calc(100vh - 78px);
   width: 100%;
 }
