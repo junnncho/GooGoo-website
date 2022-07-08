@@ -1,0 +1,118 @@
+.mint h2 {
+  font-size: 2.3rem;
+}
+
+.mint-main .topnav {
+  position: relative;
+  border-bottom-style: double;
+  border-width: 7px;
+  border-color: white;
+  color: white;
+  background-color: rgba(255, 68, 0, 0.982);
+}
+
+.mint {
+  display: flex;
+  flex-direction: row;
+  padding: 5vh;
+  padding-left: 10vw;
+  background: url(../../img/패턴.png) repeat;
+  background-size: contain;
+}
+
+.mint .col-left {
+  flex: 2;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 79vh;
+  border-radius: 20px;
+  border-style: dotted;
+  border-width: 7px;
+  border-color: rgb(71, 6, 82);
+  color: white;
+  background-color: rgb(128, 34, 205, 0.93);
+}
+
+.mint .col-right {
+  flex: 3;
+  display: flex;
+  padding: 0vh 10vw 0vh 10vw;
+  flex-direction: column;
+}
+
+.mint .first {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+  border-style: dotted;
+  border-width: 7px;
+  border-color: rgb(9, 76, 0);
+  color: white;
+  background-color: rgb(89, 149, 20, 0.93);
+  text-align: center;
+}
+
+.mint .second {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+  margin-top: 20px;
+  border-style: dotted;
+  border-width: 7px;
+  border-color: rgb(113, 14, 14);
+  color: white;
+  background-color: rgb(199, 72, 72, 0.93);
+  text-align: center;
+}
+
+.mint button {
+  padding: 16px 32px;
+}
+
+.mint .btn1 {
+  background-color: rgb(122, 176, 207);
+  color: black;
+  font-size: 1rem;
+  font-family: "Wake";
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.mint .btn1:hover {
+  background-color: rgb(8, 127, 140);
+  color: white;
+  box-shadow: 10px 10px hotpink;
+}
+.mint .btn2 {
+  margin-top: 20px;
+  background-color: rgb(206, 180, 108);
+  color: black;
+  font-size: 1rem;
+  font-family: "Wake";
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+.mint .btn2:hover {
+  background-color: rgb(200, 130, 24);
+  color: white;
+  box-shadow: 10px 10px yellow;
+}
+
+.mint a {
+  color: white;
+}
+
+.mint input {
+  width: 40px;
+}
+
+@media screen and (max-width: 796px) {
+  .mint {
+    flex-direction: column;
+  }
+  .mint .col-right {
+    padding: 0px;
+    margin-top: 20px;
+    width: 100%;
+  }
+}

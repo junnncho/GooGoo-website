@@ -28,7 +28,6 @@ function Movearound() {
               width: "15rem",
               height: "15rem",
               marginRight: "3rem",
-              color: "red",
             }}
           >
             <img
@@ -40,6 +39,7 @@ function Movearound() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                borderRadius: "20px",
               }}
             />
           </div>

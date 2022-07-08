@@ -16,15 +16,26 @@ const state = [
     reverse: true,
   },
   {
-    srcs: ["./assets/phone.png", "./assets/phone2.png"],
+    srcs: ["./assets/main.png"],
     style: {
-      width: "50%",
+      width: "73%",
       objectFit: "cover",
       alignItems: "center",
       justifyContent: "center",
     },
     head: "HOBBIES APP",
     reverse: false,
+  },
+  {
+    srcs: ["./assets/shop.png", "./assets/lock.png"],
+    style: {
+      width: "50%",
+      objectFit: "cover",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    head: "ETC Page",
+    reverse: true,
   },
 ];
 
@@ -46,6 +57,16 @@ function About() {
         SNKRZ와 함께 목표를 달성하고 더욱 즐겁게 달려보세요.
       </Part>
       <Part {...state[1]}>
+        스니커즈 앱을 통해 NFT를 착용하고 걸을 때마다 $SKZ가 적립됩니다.
+        <br />
+        <br />
+        가지고 있는 SNKRZ 능력치에 따라 받는 리워드의 수량이 결정됩니다.
+        <br />
+        <br />
+        유저는 자신의 SNKRZ NFT를 앱 내 또는 오픈 시 등 마켓플레이스를 통해서
+        가지고 있는 신발을 판매할 수도 있고
+      </Part>
+      <Part {...state[2]}>
         스니커즈 앱을 통해 NFT를 착용하고 걸을 때마다 $SKZ가 적립됩니다.
         <br />
         <br />

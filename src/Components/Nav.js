@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { Link as Link2 } from "react-router-dom";
 
 function Nav() {
   const [scrolled, setScroll] = useState("");
@@ -28,8 +29,11 @@ function Nav() {
   };
   return (
     <div className={`topnav ${scrolled}`}>
-      <img src="./assets/Logos/ecell-white.png" alt="E-cell VIT" height="45" />
-      {/* <Link to="gallery" spy={true} smooth='easeInOutQuad' offset={0} duration={durationFn}>Gallery</Link> */}
+      <img src="./assets/Logos/ecell-white.png" alt="HOBBIES" height="45" />
+      <Link2 to="/mint" onClick={durationFn}>
+        Mint
+      </Link2>
+
       <Link
         to="team"
         spy={true}
@@ -67,6 +71,10 @@ function Nav() {
         home
       </Link>
       <button className="icon" onClick={toggle}>
+        <img
+          style={{ width: "7%", float: "right" }}
+          src="./assets/menu.png "
+        ></img>
         {nav ? <i className="fa fa-times"></i> : <i className="fa fa-bars"></i>}
       </button>
       {nav ? (
@@ -107,6 +115,10 @@ function Nav() {
           >
             Team
           </Link>
+          <Link2 to="/mint" onClick={durationFn}>
+            Mint
+          </Link2>
+
           {/* <Link to="gallery" spy={true} smooth='easeInOutQuad' offset={-70} duration={durationFn}>Gallery</Link> */}
         </div>
       ) : (
