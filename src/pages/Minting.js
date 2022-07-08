@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as MINT from "./Mint/mintfunc";
 import "./Mint/Minting.css";
-import Nav from "../Components/Nav";
+import Nav from "../Components/NavResult";
 
 function Minting() {
   useEffect(() => {
