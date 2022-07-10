@@ -8,7 +8,7 @@ import img4 from "../img/transparent/4.png";
 import img5 from "../img/transparent/6.png";
 import { Link } from "react-router-dom";
 const backgroundArr = [img1, img2, img3, img4, img5];
-function Landing() {
+function Landing2() {
   const randomIndex = Math.floor(Math.random() * backgroundArr.length);
   const backgroundImg = backgroundArr[randomIndex];
   return (
@@ -30,15 +30,15 @@ function Landing() {
           />
           <div className="land">
             <span className="head">FREE TO EARN</span>
-            <span className="vit">NFT 프로젝트</span>
+            <span className="vit">NFT Project</span>
           </div>
         </div>
-        <Link to="/eng" className="scrolldown">
-          ENGLISH <i className="fa fa-angle-right"></i>
+        <Link to="/" className="scrolldown">
+          KOREAN <i className="fa fa-angle-right"></i>
         </Link>
       </div>
     </div>
   );
 }
 
-export default Landing;
+export default Landing2;

@@ -1,28 +1,37 @@
 import React from "react";
-// import Loader from '../Components/Loader';
 import About from "../Sections/About";
 import Landing from "../Sections/Landing";
 import Footer from "../Sections/Footer";
-import Gallery from "../Sections/Gallery";
 import Team from "../Sections/Team";
-import Activities from "../Sections/Activities";
+import RoadMap from "../Sections/RoadMap";
 import Movearound from "../Sections/Movearound";
 import Counters from "../Components/Counters";
-
-function Main() {
+import RoadMap2 from "../Sections2/RoadMap";
+import About2 from "../Sections2/About";
+import Landing2 from "../Sections2/Landing";
+export function Main() {
   return (
     <>
-      {/* <Loader timeout="1000" /> */}
       <Landing />
       <Movearound />
       <Counters />
       <About />
-      <Activities />
-      <Team />
-      {/*<Gallery />*/}
+      <RoadMap />
+      {/* <Team /> */}
       <Footer />
     </>
   );
 }
-
-export default Main;
+export function Main2() {
+  return (
+    <>
+      <Landing2 />
+      <Movearound />
+      <Counters />
+      <About2 />
+      <RoadMap2 />
+      {/* <Team /> */}
+      <Footer />
+    </>
+  );
+}

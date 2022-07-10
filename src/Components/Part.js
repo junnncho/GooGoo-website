@@ -3,15 +3,12 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function Part({ srcs, style, head, reverse, children }) {
+function Part({ srcs, style, head, name, children }) {
   useEffect(() => {
     AOS.init();
   });
   return (
-    <div
-      className="split"
-      style={{ flexDirection: reverse ? "row-reverse" : "row" }}
-    >
+    <div className={`split ${name}`}>
       <div className="col-left">
         <div className="text-container">
           <h2 className="title" data-aos="fade-up" data-aos-offset="-20">

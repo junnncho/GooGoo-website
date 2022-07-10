@@ -5,7 +5,7 @@ function Nav() {
   return (
     <div className={`result-topnav`}>
       <Link to="/">
-        <img src="./assets/Logos/ecell-white.png" alt="HOBBIES" height="45" />
+        <img src="./logo.png" alt="HOBBIES" height="45" />
       </Link>
     </div>
   );

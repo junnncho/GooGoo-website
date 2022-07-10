@@ -6,15 +6,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "MACHO";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_MACHO.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
-
 body {
   margin: 0;
   padding: 0;
@@ -32,6 +23,10 @@ body {
   font-family: "Wake";
 }
 
+.land {
+  text-shadow: -5px 0 #000, 0 5px #000;
+  color: rgb(255, 226, 98);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -242,12 +237,16 @@ html {
 .col-12 {
   width: 99.99%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .iia,
 .head,
 .vit {
   display: block;
+  position: relative;
   text-transform: uppercase;
 }
 
@@ -271,12 +270,12 @@ html {
 .head {
   font-size: 7vw;
   font-weight: 700;
-  z-index: 1;
+  z-index: 0;
   overflow-x: hidden;
 }
 
 .vit {
-  z-index: 1;
+  z-index: 0;
   font-size: 5vw;
   font-weight: 600;
 }
@@ -297,9 +296,10 @@ html {
   transform: rotate(90deg);
   position: absolute;
   color: aliceblue;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 34px;
   bottom: 70px;
-  right: -30px;
+  right: 0.2vw;
 }
 
 @media (max-width: 991px) {
@@ -357,10 +357,12 @@ html {
 .footer a {
   color: #ffffff;
   font-size: 1.5vw;
+  position: relative;
 }
 
-.footer img {
+.footer .logo {
   height: 5vw;
+  position: relative;
 }
 
 .footer .iia {
@@ -370,7 +372,7 @@ html {
 }
 
 @media (max-width: 900px) {
-  .footer img {
+  .footer .logo {
     height: 10vw;
   }
   .footer .iia {
@@ -382,7 +384,7 @@ html {
 }
 
 @media (max-width: 600px) {
-  .footer img {
+  .footer .logo {
     height: 14vw;
   }
   .footer .iia {
@@ -391,6 +393,11 @@ html {
   .footer a {
     font-size: 3.8vw;
   }
+}
+
+.about {
+  z-index: 4;
+  position: relative;
 }
 
 .top {
@@ -419,33 +426,63 @@ html {
   padding: 8px;
   font-size: 22px !important;
   margin: 10px 7px;
+  z-index: 3;
 }
 
-.top a,
-.bottom a {
-  background-color: #00d3e6;
-  text-decoration: none;
-  color: #ffffff;
-  border-radius: 50%;
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon:hover {
+  width: 50px;
+  height: 50px;
+  transition: ease-in-out 0.2s;
+}
+
+.state1 {
+  flex-direction: row-reverse;
+  transition-duration: 1s;
+}
+
+.state2 {
+  flex-direction: row;
+}
+.state3 {
+  flex-direction: column;
+  align-items: center;
+}
+.state3 .col-left {
+  width: 80%;
+  text-align: center;
+}
+.state3 .col-right {
+  width: 60%;
+  text-align: center;
+}
+.state3 .content {
+  text-align: center;
+}
+
+.bottom .icon {
+  position: absolute;
+  left: 0px;
+}
+@media screen and (max-width: 780px) {
+  .split {
+    flex-direction: column;
+    align-items: center;
+  }
+  .split .col-left {
+    width: 90%;
+  }
+  .split .col-right {
+    width: 75%;
+  }
 }
 
 @media (max-width: 600px) {
-  .top {
-    position: absolute;
-    top: 85vh;
-    left: auto;
-  }
-  .top a {
-    display: inline-block;
-    width: 6vw;
-    height: 6vw;
-    padding: 4px;
-    font-size: 5vw;
-    margin: 15px 10px;
-  }
   .bottom a {
     display: inline-block;
-    background-color: #8143fa;
     width: 6vw;
     height: 6vw;
     padding: 4px;
@@ -1069,7 +1106,7 @@ loading
 .loader > .cube > .sides > .loader-logo {
   background-color: transparent;
   border: none;
-  background-image: url("./favicon.png");
+  background-image: url("./logo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1188,7 +1225,7 @@ loading
   font-size: 1rem;
   color: #ffffff;
   text-align: left;
-  padding: 0px 30px;
+  padding: 40px 40px;
   padding-bottom: 0;
   overflow-y: auto;
   max-height: 120px;
@@ -1247,10 +1284,10 @@ loading
     width: 36%;
   }
   .event-banner .edesc {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .events .edesc {
-    padding: 15px 20px;
+    padding: 40px 40px;
   }
 }
 
@@ -1269,12 +1306,14 @@ loading
   text-align: center;
   background-color: #fe7651;
 }
-.bg-activities {
+.roadmap {
   padding: 8vh 5vw;
   text-align: center;
   background-color: #005cbe;
 }
 .move {
+  z-index: 5;
+  position: relative;
   padding: 2vh 3vw;
   text-align: center;
   background-color: #fe7651;
@@ -1282,7 +1321,6 @@ loading
 .split {
   padding: 5vh 5vw;
   display: flex;
-  flex-direction: row;
   text-align: center;
   background-color: #fe7651;
 }
@@ -1290,6 +1328,7 @@ loading
   padding: 0vh 0vw;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .col-left {
@@ -1342,6 +1381,17 @@ loading
 
 .d-flex {
   display: flex;
+  position: relative;
+  z-index: 3;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 0px;
+  background-color: rgb(0, 193, 135);
+}
+
+.d-flex2 {
+  display: flex;
+  z-index: 0;
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px 0px;

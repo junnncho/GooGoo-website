@@ -29,12 +29,12 @@ function Nav() {
   };
   return (
     <div className={`topnav ${scrolled}`}>
-      <img src="./assets/Logos/ecell-white.png" alt="HOBBIES" height="45" />
+      <img src="./logo.png" alt="HOBBIES" height="45" />
       <Link2 to="/mint" onClick={durationFn}>
         Mint
       </Link2>
 
-      <Link
+      {/* <Link
         to="team"
         spy={true}
         smooth="easeInOutQuad"
@@ -42,7 +42,7 @@ function Nav() {
         duration={durationFn}
       >
         Team
-      </Link>
+      </Link> */}
       <Link
         to="activities"
         spy={true}
@@ -106,7 +106,7 @@ function Nav() {
           >
             Roadmap
           </Link>
-          <Link
+          {/* <Link
             to="team"
             spy={true}
             smooth="easeInOutQuad"
@@ -114,7 +114,7 @@ function Nav() {
             duration={durationFn}
           >
             Team
-          </Link>
+          </Link> */}
           <Link2 to="/mint" onClick={durationFn}>
             Mint
           </Link2>

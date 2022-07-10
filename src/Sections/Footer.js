@@ -4,10 +4,9 @@ import Social from "../Components/Social";
 function Footer() {
   return (
     <div className="footer">
-      <img src="./assets/Logos/ecell-white.png" alt="E-cell VIT" />
-      <span className="iia">HOBBY TO EARN</span>
-      <a href="mailto:hobbiesnft@gmail.com">hobbiesnft@gmail.com</a>
-      <a href="tel:+0212345678">+02-1234-5678</a>
+      <img src="./logo.png" alt="HOBBIES" className="logo" />
+      <span className="iia">FREE TO EARN</span>
+      <a href="mailto:thinkfi.project@gmail.com">thinkfi.project@gmail.com</a>
       <Social position="bottom" />
     </div>
   );

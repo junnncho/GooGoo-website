@@ -5,37 +5,41 @@ import "aos/dist/aos.css";
 
 const state = [
   {
-    srcs: ["./assets/logo.png"],
+    srcs: ["./assets/logo_skate.png"],
     style: {
       width: "100%",
       objectFit: "cover",
       alignItems: "center",
       justifyContent: "center",
     },
-    head: "Why Hobby to Earn",
-    reverse: true,
+    head: "Free to Earn(F2E)란?",
+    name: "state1",
   },
   {
-    srcs: ["./assets/main.png"],
+    srcs: ["./assets/charactor.png"],
     style: {
       width: "73%",
       objectFit: "cover",
       alignItems: "center",
       justifyContent: "center",
     },
-    head: "HOBBIES APP",
-    reverse: false,
+    head: "HOBBIES 앱",
+    name: "state2",
   },
   {
-    srcs: ["./assets/shop.png", "./assets/lock.png"],
+    srcs: [
+      "./assets/phone/phone1.png",
+      "./assets/phone/phone2.png",
+      "./assets/phone/phone3.png",
+    ],
     style: {
       width: "50%",
       objectFit: "cover",
       alignItems: "center",
       justifyContent: "center",
     },
-    head: "ETC Page",
-    reverse: true,
+    head: "앱 구성",
+    name: "state3",
   },
 ];
 
@@ -44,37 +48,32 @@ function About() {
     AOS.init();
   });
   return (
-    <div id="about">
+    <div className="about">
       <Part {...state[0]}>
-        스니커즈 앱은 운동과 건강 그리고 리워드를 함께 즐길 수 있는 Walk To Earn
-        플랫폼입니다.
+        HOBBIES는 스마트폰을 끄고 본인만의 건강한 취미생활을 하면서 리워드를
+        받을 수 있는 Web3 라이프 스타일 어플 입니다.
         <br />
-        <br />
-        스테미나 만큼 걷고 뛰면서 수익을 만들고 GPS, 가속도 센서 등 나의 운동
-        정보를 통해 높은 칼로리 소모를 위한 다양한 동기부여를 제공합니다.
-        <br />
-        <br />
-        SNKRZ와 함께 목표를 달성하고 더욱 즐겁게 달려보세요.
+        <br /> 나날이 늘어나는 현대인들의 스마트폰 의존성을 줄이고 본인에게 맞는
+        취미생활을 찾을 수 있는 기회를 줍니다.
       </Part>
       <Part {...state[1]}>
-        스니커즈 앱을 통해 NFT를 착용하고 걸을 때마다 $SKZ가 적립됩니다.
+        HOBBIES NFT를 구매한 후 스마트폰을 끄기만 하면 자동으로 HOBBIES 토큰을
+        수령할 수 있습니다. <br />
         <br />
-        <br />
-        가지고 있는 SNKRZ 능력치에 따라 받는 리워드의 수량이 결정됩니다.
-        <br />
-        <br />
-        유저는 자신의 SNKRZ NFT를 앱 내 또는 오픈 시 등 마켓플레이스를 통해서
-        가지고 있는 신발을 판매할 수도 있고
+        스마트폰의 화면을 끄면 어플 내 캐릭터가 해당 NFT에 맞는 취미활동을
+        시작합니다.
       </Part>
       <Part {...state[2]}>
-        스니커즈 앱을 통해 NFT를 착용하고 걸을 때마다 $SKZ가 적립됩니다.
+        HOBBIES 앱에서 시작버튼을 클릭을 하면 화면이 꺼지고 해당 NFT의 능력만큼
+        $HOBB가 적립됩니다.
         <br />
         <br />
-        가지고 있는 SNKRZ 능력치에 따라 받는 리워드의 수량이 결정됩니다.
+        능력치는 NFT마다 세분화되어 있고 NFT는 앱 내 자체 상점에서 판매 혹은
+        구매가 가능합니다.
         <br />
         <br />
-        유저는 자신의 SNKRZ NFT를 앱 내 또는 오픈 시 등 마켓플레이스를 통해서
-        가지고 있는 신발을 판매할 수도 있고
+        시작버튼을 누르면 화면이 꺼지고 잠금화면을 키면 현재 적립된 $HOBB가
+        표시됩니다.
       </Part>
     </div>
   );
