@@ -19,15 +19,7 @@ function Landing() {
         <Nav />
         <Social position="top" />
         <div className="col-12">
-          <img
-            src={backgroundImg}
-            style={{
-              width: "50vw",
-              zIndex: "0",
-              position: "fixed",
-              top: "0px",
-            }}
-          />
+          <img src={backgroundImg} className="land-img" />
           <div className="land">
             <span className="head">FREE TO EARN</span>
             <span className="vit">NFT 프로젝트</span>
