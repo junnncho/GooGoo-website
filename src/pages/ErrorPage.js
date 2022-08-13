@@ -3,18 +3,18 @@ import Social from "../Components/Social";
 import { Link } from "react-router-dom";
 
 function ErrorPage() {
-  const [head, setHead] = useState("HOBBIES NFT");
+  const [head, setHead] = useState("GOOGOO NFT");
   window.addEventListener("resize", () => {
-    var txt = "HOBBIES";
+    var txt = "GOOGOO";
     if (window.innerWidth > 400) {
-      txt = "HOBBIES NFT";
+      txt = "GOOGOO NFT";
     }
     setHead(txt);
   });
   window.addEventListener("load", () => {
-    var txt = "HOBBIES";
+    var txt = "GOOGOO";
     if (window.innerWidth > 400) {
-      txt = "HOBBIES NFT";
+      txt = "GOOGOO NFT";
     }
     setHead(txt);
   });

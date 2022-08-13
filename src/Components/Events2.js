@@ -63,68 +63,44 @@ function Events2() {
         img="./assets/Percent/30.png"
         fit="fit"
         name="October,2022"
-        desc={
-          <p>
-            1.DEX Listing
-            <br /> (KLAYSWAP Liquidity Supply)
-            <br />
-            <br />
-            2.In October, App Tester recruitment, App modification and
-            improvement
-          </p>
-        }
+        desc={<p>Comming Soon</p>}
       />
       <Event
         img="./assets/Percent/40.png"
         fit="fit"
         name="Nov-Dec,2022"
-        desc={
-          <p>
-            1. In November, Launch App <br />
-            (playstore / appstore)
-            <br />
-            <br /> 2. Advertising on the Samsung station electronic display
-          </p>
-        }
+        desc={<p>Comming Soon</p>}
       />
       <Event
         img="./assets/Percent/50.png"
         fit="fit"
         name="Jan-Feb,2023"
-        desc={
-          <p>
-            1. Multi-chain integration <br />
-            (Commemorative Genesis NFT Minting)
-            <br />
-            <br />
-            2. CEX listing(an overseas exchange/MEXC)
-          </p>
-        }
+        desc={<p>Comming Soon </p>}
       />
       <Event
         img="./assets/Percent/60.png"
         fit="fit"
         name="March,2023"
-        desc="Expand the ecosystem through overseas marketing"
+        desc="Comming Soon"
       />
       <Event
         img="./assets/Percent/70.png"
         fit="fit"
         name="April,2023"
-        desc="Offline hobbies with Holders"
+        desc="Comming Soon"
       />
       <Event
         img="./assets/Percent/80.png"
         fit="fit"
         name="May,2023"
-        desc="Launch limited edition NFTs and goods in collaboration with hobby-related brands"
+        desc="Comming Soon"
       />
       {/* <Event img="./assets/Logos/udaan.png" fit="fit" name="Udaan" desc="Udaan is a business ecosystem simulation where partakers get to learn about the intricacies behind businesses, which are beyond obvious. Students get to devise business plans which are financially sustainable while being efficient with processes involving legalities, compliance and managing CXOs to facilitate company's scalability." /> */}
       <Event
         img="./assets/Percent/90.png"
         fit="fit"
         name="June,2023"
-        desc="Introduce new projects and attract investment based on THINKFI Coin"
+        desc="Comming Soon"
       />
       {/* <Event img="./assets/Logos/alumni_talk.png" fit="fit" name="Alumni Talk" desc="There's no better teacher than experience and no better preacher than the experienced. Expand the horizons of your knowledge and learn the best ways to deal with obstacles from people who have already been in your shoes in the past." /> */}
     </div>

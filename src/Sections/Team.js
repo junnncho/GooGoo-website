@@ -35,39 +35,18 @@ function Team() {
       <DarkBg head="Team" />
       <div className="team">
         <Board
-          name="Jun Cho"
-          designation="Web Engineer"
-          pic="./assets/Profile/4.jpeg"
+          name="H A"
+          designation="Cofounder / Marketer"
+          pic="./assets/Profile/1.png"
           cls="two"
-          linkedin="https://www.linkedin.com/in/namrata-singhal-ba8735199/"
+          linkedin="https://twitter.com/googoo_nft"
         />
         <Board
-          name="JH Kim"
-          designation="Deputy Managing Director"
-          pic="./assets/Profile/2.jpg"
+          name="C J"
+          designation="Cofounder / Developer"
+          pic="./assets/Profile/2.png"
           cls="two"
-          linkedin="https://www.linkedin.com/in/nipun-mahajan-6b6718165/"
-        />
-        <Board
-          name="Steven Lee"
-          designation="Deputy Managing Director"
-          pic="./assets/Profile/3.jfif"
-          cls="three"
-          linkedin="https://www.linkedin.com/in/pearl-motwani-862089190/"
-        />
-        <Board
-          name="G-Dragon"
-          designation="Director of Operations"
-          pic="./assets/Profile/1.jpg"
-          cls="three"
-          linkedin="https://www.linkedin.com/in/rishabh-mehta1605/"
-        />
-        <Board
-          name="Sandara Cho"
-          designation="Director of Operations"
-          pic="./assets/Profile/5.jfif"
-          cls="three"
-          linkedin="https://www.linkedin.com/in/rishabh-mehta1605/"
+          linkedin="https://twitter.com/googoo_nft"
         />
       </div>
     </div>

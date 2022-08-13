@@ -6,7 +6,19 @@ function Counter(props) {
   useEffect(() => {
     AOS.init();
   });
-  return (
+  return props?.src ? (
+    <div
+      className="counters"
+      data-aos="zoom-in"
+      data-aos-duration="500"
+      data-aos-offset="-20"
+    >
+      <div className="count">{props.count}</div>
+      <a target="_blank" rel="noreferrer" href={props.src}>
+        <div className="spec">{props.spec}</div>
+      </a>
+    </div>
+  ) : (
     <div
       className="counters"
       data-aos="zoom-in"
@@ -22,10 +34,17 @@ function Counter(props) {
 function Counters() {
   return (
     <div className="d-flex2">
-      <Counter count="" spec="" />
-      <Counter count="" spec="" />
-      <Counter count="" spec="" />
-      <Counter count="" spec="" />
+      <Counter
+        count="700+"
+        spec="TWITTER"
+        src="https://twitter.com/googoo_nft"
+      />
+      <Counter
+        count="1200+"
+        spec="DISCORD"
+        src="https://discord.gg/GvmYjZdQpY"
+      />
+      <Counter count="FREE" spec="PRICE" />
     </div>
   );
 }

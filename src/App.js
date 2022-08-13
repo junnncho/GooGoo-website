@@ -12,7 +12,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/eng" component={Main2} />
-          <Route exact path="/mint" component={Minting} />
+          <Route exact path="/mint" component={Minting2} />
           <Route path="*" component={ErrorPage} />
         </Switch>
       </Router>

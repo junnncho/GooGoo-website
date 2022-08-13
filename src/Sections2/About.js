@@ -2,82 +2,116 @@ import Part from "../Components/Part";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Cloud from "../Components/Cloud2";
 
 const state = [
   {
-    srcs: ["./assets/logo_skate.png"],
+    srcs: ["./logo.png"],
     style: {
       width: "100%",
       objectFit: "cover",
       alignItems: "center",
       justifyContent: "center",
     },
-    head: "What is Free to Earn(F2E)?",
+    head: "GOO GOO PROJECT",
     name: "state1",
   },
   {
-    srcs: ["./assets/charactor.png"],
+    srcs: ["./assets/coingoogoo.png", "./assets/coin.png"],
     style: {
-      width: "73%",
+      width: "30%",
+      height: "30%",
       objectFit: "cover",
-      alignItems: "center",
-      justifyContent: "center",
+      marginLeft: "50px",
+      alignSelf: "center",
     },
-    head: "HOBBIES APP",
+    head: "GOO GOO NFT",
     name: "state2",
   },
   {
-    srcs: [
-      "./assets/phone/phone1.png",
-      "./assets/phone/phone2.png",
-      "./assets/phone/phone3.png",
-    ],
+    srcs: [],
     style: {
-      width: "50%",
+      width: "100%",
       objectFit: "cover",
       alignItems: "center",
       justifyContent: "center",
     },
-    head: "APP Pages",
+    head: "Platform Configuration",
     name: "state3",
   },
 ];
 
-function About2() {
+function About() {
   useEffect(() => {
     AOS.init();
   });
   return (
     <div className="about">
       <Part {...state[0]}>
-        HOBBIES is a Web3 lifestyle application. If you turn off your smartphone
-        and do your own hobby, you'll get a reward.
+        A dove has appeared to bring peace to the cringe-worthy NFT market!
         <br />
-        <br /> It gives modern people a chance to reduce their dependence on
-        smartphones and find a hobby that suits them.
+        <br />
+        GOGOO is a project that connects NFT and the community
+        <br />
+        <br />
+        When holders are active in the community, rewards are paid in proportion
+        to the amount of activity.
+        <br />
+        <br />
+        GOOGOO is a Web 3.0-based web community that is easily accessible to
+        people with little knowledge of NFT.
+        <br />
+        <br />
       </Part>
       <Part {...state[1]}>
-        After obtaining HOBBIES NFT, you can receive $HOBB tokens by turning off
-        the smartphone screen.
+        Mint all collections free of charge so that those interested in NFT
+        don't feel burdened by the price.
         <br />
         <br />
-        When you turn off the screen on your smartphone, the character in the
-        application starts a hobby that corresponds to NFT.
+        After the minting is over and the price is formed, a fee will be charged
+        to the GOOGOO wallet.
+        <br />
+        <br />
+        We will invest fees and operating expenses in blockchain-based content
+        and community operations.
       </Part>
       <Part {...state[2]}>
-        When you click the Start button in the HOBBIES app, the screen turns off
-        and accumulates $HOBB as much as the ability of the NFT.
+        GOO GOO is a community platform based on WEB3.0.
         <br />
         <br />
-        The capability value is different for each NFT, and NFT can be sold or
-        purchased at its own store in the app.
+        Through marketing collaboration with multiple NFT projects, communities,
+        and influencers, the platform can be found in a variety of ways They're
+        kind of childish
         <br />
         <br />
-        When you press the start button, the screen turns off, and when you turn
-        on the lock screen, the current accumulated $HOBB is displayed.
+        Various events will be held for existing NFT holders to enjoy benefits
+        and fun We will provide it.
+        <br />
+        <br />
+        We are planning to launch various P2E games in the form of mini-games
+        within the web platform.
+        <br />
+        <br />
+        In the frozen NFT market, communities are brought together as a platform
+        to exchange information It's easier to do
+        <br />
+        <br />
+        Newbies who are just starting to get interested in NFT don't leave the
+        NFT market, they're going to get information It's easy to get.
+        <br />
+        <br />
+        So that holders can form a DAO within the platform and run the community
+        together I'm going to make it.
+        <br />
+        <br />
+        Community users can share NFT or community revenue I have it.
+        <br />
+        <br />
+        The meeting place where NFT holders gather is "GOOGOO".
+        <Cloud />
       </Part>
     </div>
   );
 }
 
-export default About2;
+export default About;
